@@ -1,0 +1,27 @@
+{
+  "name": "webpack-bootstrap",
+  "version": "1.0.0",
+  "description": "Trying out Webpack + Bootstrap (4.0.0-alpha.6)",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.1.2",
+    "bootstrap": "4.0.0-alpha.6",
+    "css-loader": "^0.28.4",
+    "exports-loader": "^0.6.4",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.11.2",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.5.3",
+    "postcss-flexbugs-fixes": "^3.0.0",
+    "postcss-loader": "^2.0.6",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "tether": "^1.4.0",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.1.0"
+  }
+}
