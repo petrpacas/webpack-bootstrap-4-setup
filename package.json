@@ -1,12 +1,17 @@
 {
-  "name": "webpack-bootstrap",
+  "name": "bootstrap-4-setup",
   "version": "1.0.0",
-  "description": "Trying out Webpack + Bootstrap (4.0.0-alpha.6)",
-  "main": "src/main.js",
+  "description": "Starter pack for my ease-of-mind",
+  "author": "Petr Pacas <petr.pacas@gmail.com> (http://petrpacas.com/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:petrpacas/bootstrap-4-setup.git"
+  },
+  "homepage": "https://github.com/petrpacas/bootstrap-4-setup",
   "scripts": {
     "build": "webpack"
   },
-  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "bootstrap": "4.0.0-alpha.6",
