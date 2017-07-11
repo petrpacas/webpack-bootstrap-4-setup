@@ -1,4 +1,6 @@
 var webpack = require('webpack');
+var CleanWebpackPlugin = require('clean-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path');
 
 var config = {
@@ -12,13 +14,14 @@ var config = {
   module: {
     rules: [{
       test: /\.scss$/,
-      loader: 'style-loader?sourceMap!css-loader?sourceMap!postcss-loader?sourceMap!sass-loader?sourceMap'
+      use: ExtractTextPlugin.extract({
+        fallback: 'style-loader?sourceMap',
+        use: ['css-loader?sourceMap', 'postcss-loader?sourceMap', 'sass-loader?sourceMap'],
+        publicPath: ''
+      })
     }, {
       test: /\.(png|svg|jpg|gif|woff|woff2|eot|ttf|otf)$/,
-      loader: 'file-loader',
-      options: {
-        name: 'assets/[name].[ext]'
-      }
+      use: ['file-loader?name=assets/[name].[ext]']
     }]
   },
 
@@ -41,7 +44,9 @@ var config = {
       Tab: 'exports-loader?Tab!bootstrap/js/dist/tab',
       Tooltip: 'exports-loader?Tooltip!bootstrap/js/dist/tooltip',
       Util: 'exports-loader?Util!bootstrap/js/dist/util'
-    })
+    }),
+    new CleanWebpackPlugin('dist'),
+    new ExtractTextPlugin('main.css')
   ],
 };
 

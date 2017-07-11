@@ -10,9 +10,10 @@
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "bootstrap": "4.0.0-alpha.6",
+    "clean-webpack-plugin": "^0.1.16",
     "css-loader": "^0.28.4",
     "exports-loader": "^0.6.4",
-    "extract-text-webpack-plugin": "^2.1.2",
+    "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
     "font-awesome": "^4.7.0",
     "node-sass": "^4.5.3",
