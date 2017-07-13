@@ -1,6 +1,6 @@
-# My Bootstrap 4 Setup (v1.0.1) #
+# Webpack + Bootstrap 4 Setup (v1.0.2) #
 
-Starter pack for my ease-of-mind
+Starter pack for ease of mind
 
 ## Current Bootstrap version ##
 
@@ -19,7 +19,7 @@ yarn
 
 ## and then
 
-yarn dev
+yarn serve
 # start and open hot server for development (localhost:2222)
 
 ## or

@@ -1,7 +1,7 @@
 var bootstrapSupported = require('bootstrap/grunt/postcss').autoprefixer.browsers;
 if (bootstrapSupported == null) { console.log("Cannot find autoprefixer's browser configuration...") };
 
-var config = {
+module.exports = {
   plugins: {
     'postcss-flexbugs-fixes': {},
     'autoprefixer': {
@@ -9,5 +9,3 @@ var config = {
     }
   }
 }
-
-module.exports = config;

@@ -1,25 +1,26 @@
 {
-  "name": "bootstrap-4-setup",
-  "version": "1.0.1",
-  "description": "Starter pack for my ease-of-mind",
+  "name": "webpack-bootstrap-4-setup",
+  "version": "1.0.2",
+  "description": "Starter pack for ease of mind",
   "author": "Petr Pacas <petr.pacas@gmail.com> (http://petrpacas.com/)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:petrpacas/bootstrap-4-setup.git"
+    "url": "git@github.com:petrpacas/webpack-bootstrap-4-setup.git"
   },
-  "homepage": "https://github.com/petrpacas/bootstrap-4-setup",
+  "homepage": "https://github.com/petrpacas/webpack-bootstrap-4-setup",
   "scripts": {
-    "dev": "webpack-dev-server --env.build=false --open",
+    "serve": "webpack-dev-server --env.build=false --open",
     "build": "webpack --env.build --progress"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
     "bootstrap": "4.0.0-alpha.6",
     "clean-webpack-plugin": "^0.1.16",
-    "cross-env": "^5.0.1",
     "css-loader": "^0.28.4",
-    "exports-loader": "^0.6.4",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
     "font-awesome": "^4.7.0",
@@ -31,6 +32,7 @@
     "tether": "^1.4.0",
     "url-loader": "^0.5.9",
     "webpack": "^3.2.0",
-    "webpack-dev-server": "^2.5.1"
+    "webpack-dev-server": "^2.5.1",
+    "webpack-module-hot-accept": "^1.0.5"
   }
 }
