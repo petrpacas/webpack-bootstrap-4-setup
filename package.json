@@ -1,6 +1,6 @@
 {
   "name": "webpack-bootstrap-4-setup",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Starter pack for ease of mind",
   "author": "Petr Pacas <petr.pacas@gmail.com> (http://petrpacas.com/)",
   "license": "MIT",
@@ -10,8 +10,8 @@
   },
   "homepage": "https://github.com/petrpacas/webpack-bootstrap-4-setup",
   "scripts": {
-    "serve": "webpack-dev-server --env.build=false --open",
-    "build": "webpack --env.build --progress"
+    "serve": "webpack-dev-server --open",
+    "build": "cross-env NODE_ENV=production webpack --progress"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -20,6 +20,7 @@
     "babel-preset-env": "^1.6.0",
     "bootstrap": "4.0.0-alpha.6",
     "clean-webpack-plugin": "^0.1.16",
+    "cross-env": "^5.0.1",
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",

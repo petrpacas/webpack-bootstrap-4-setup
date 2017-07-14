@@ -3,7 +3,8 @@
 // Core variables and mixins
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
-// @import "~bootstrap/scss/custom";
+@import "custom";
+// ^^^^ Copy variables from `_variables-reference.scss` and remove `!default` from them
 // Reset and dependencies
 @import "~bootstrap/scss/normalize";
 @import "~bootstrap/scss/print";

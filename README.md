@@ -1,4 +1,4 @@
-# Webpack + Bootstrap 4 Setup (v1.0.2) #
+# Webpack + Bootstrap 4 Setup (v1.0.3) #
 
 Starter pack for ease of mind
 
@@ -13,17 +13,11 @@ Starter pack for ease of mind
 
 ## How to use ##
 
-```
-yarn
-# install node modules
+`yarn`
+installs node modules
 
-## and then
+`yarn serve`
+starts and opens hot reload server for development (localhost:2222)
 
-yarn serve
-# start and open hot server for development (localhost:2222)
-
-## or
-
-yarn build
-# run build tasks for staging/production
-```
+`yarn build`
+runs build tasks for staging/production
