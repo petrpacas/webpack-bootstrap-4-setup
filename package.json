@@ -1,6 +1,6 @@
 {
   "name": "webpack-bootstrap-4-setup",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Starter pack for ease of mind",
   "author": "Petr Pacas <petr.pacas@gmail.com> (http://petrpacas.com/)",
   "license": "MIT",
@@ -32,8 +32,8 @@
     "style-loader": "^0.18.2",
     "tether": "^1.4.0",
     "url-loader": "^0.5.9",
-    "webpack": "^3.2.0",
-    "webpack-dev-server": "^2.5.1",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1",
     "webpack-module-hot-accept": "^1.0.5"
   }
 }
