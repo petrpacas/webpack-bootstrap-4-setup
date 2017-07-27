@@ -71,7 +71,8 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname),
     hot: true,
-    port: 2222
+    port: 2222,
+    watchContentBase: true
   },
   devtool: isBuild ? 'source-map' : 'eval',
   plugins: isBuild ? [
