@@ -7,17 +7,6 @@ var path = require('path');
 var CleanWebpackPlugin = require('clean-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-var commonPlugins = (
-  new CleanWebpackPlugin('dist'),
-  new webpack.ProvidePlugin({
-    $: 'jquery',
-    jQuery: 'jquery',
-    'window.jQuery': 'jquery',
-    Tether: 'tether',
-    'window.Tether': 'tether'
-  })
-);
-
 
 // Main config
 
@@ -76,14 +65,28 @@ module.exports = {
   },
   devtool: isBuild ? 'source-map' : 'eval',
   plugins: isBuild ? [
-    commonPlugins,
+    new CleanWebpackPlugin('dist'),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      Tether: 'tether',
+      'window.Tether': 'tether'
+    }),
     new ExtractTextPlugin('main.css'),
     new webpack.optimize.UglifyJsPlugin({
       comments: false,
       sourceMap: true
     })
   ] : [
-    commonPlugins,
+    new CleanWebpackPlugin('dist'),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery',
+      Tether: 'tether',
+      'window.Tether': 'tether'
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin()
   ]

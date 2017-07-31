@@ -1,6 +1,6 @@
 {
   "name": "webpack-bootstrap-4-setup",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Starter pack for ease of mind",
   "author": "Petr Pacas <petr.pacas@gmail.com> (http://petrpacas.com/)",
   "license": "MIT",
@@ -26,7 +26,7 @@
     "file-loader": "^0.11.2",
     "font-awesome": "^4.7.0",
     "node-sass": "^4.5.3",
-    "postcss-flexbugs-fixes": "^3.0.0",
+    "postcss-flexbugs-fixes": "^3.2.0",
     "postcss-loader": "^2.0.6",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
