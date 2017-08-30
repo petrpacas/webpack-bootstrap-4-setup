@@ -1,10 +1,10 @@
-# Webpack + Bootstrap 4 Setup (v1.0.6) #
+# Webpack + Bootstrap 4 Setup (v1.1.0) #
 
 Starter pack for ease of mind
 
 ## Current Bootstrap version ##
 
-*4.0.0-alpha.6*
+*4.0.0-beta*
 
 ## Build requirements ##
 
@@ -16,8 +16,8 @@ Starter pack for ease of mind
 `yarn`
 installs node modules
 
-`yarn serve`
-starts and opens hot reload server for development (localhost:2222)
+`yarn dev`
+starts and opens reload server for development (localhost:2222)
 
 `yarn build`
 runs build tasks for staging/production
