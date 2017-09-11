@@ -1,6 +1,6 @@
 {
   "name": "webpack-bootstrap-4-setup",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Starter pack for ease of mind",
   "author": "Petr Pacas <petr.pacas@gmail.com> (http://petrpacas.com/)",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "popper.js": "^1.12.5"
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.3",
+    "autoprefixer": "^7.1.4",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-es2015-modules-strip": "^0.1.1",
@@ -27,7 +27,7 @@
     "bootstrap": "4.0.0-beta",
     "clean-webpack-plugin": "^0.1.16",
     "cross-env": "^5.0.5",
-    "css-loader": "^0.28.5",
+    "css-loader": "^0.28.7",
     "exports-loader": "^0.6.4",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
@@ -37,7 +37,7 @@
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
-    "webpack": "^3.5.5",
+    "webpack": "^3.5.6",
     "webpack-dev-server": "^2.7.1",
     "webpack-module-hot-accept": "^1.0.5"
   }
