@@ -52,11 +52,20 @@ module.exports = {
               }
             }
           }
-        }, 'postcss-loader?sourceMap', 'sass-loader?sourceMap']
+        }, {
+          loader: 'postcss-loader',
+          options: {
+            sourceMap: true,
+            ident: 'postcss',
+            plugins: (loader) => [
+              require('autoprefixer')()
+            ]
+          }
+        },
+        'sass-loader?sourceMap']
       }) : [
         'style-loader?sourceMap',
         'css-loader?sourceMap',
-        'postcss-loader?sourceMap',
         'sass-loader?sourceMap'
       ]
     }, {
@@ -67,7 +76,7 @@ module.exports = {
         'babel-loader?presets=env'
       ] : [
         'babel-loader?presets=env',
-        // 'webpack-module-hot-accept'
+        'webpack-module-hot-accept'
       ]
     }, {
       // Other files
@@ -77,9 +86,8 @@ module.exports = {
   },
   devServer: {
     contentBase: path.resolve(__dirname),
-    // hot: true,
-    port: 2222,
-    watchContentBase: true
+    hot: true,
+    port: 2222
   },
   devtool: isBuild ? 'source-map' : 'eval',
   plugins: isBuild ? [
@@ -93,7 +101,7 @@ module.exports = {
   ] : [
     new CleanWebpackPlugin('dist'),
     new webpack.ProvidePlugin(providePluginList),
-    // new webpack.HotModuleReplacementPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin()
   ]
 };

@@ -1,10 +1,10 @@
-# Webpack + Bootstrap 4 Setup (v1.1.1) #
+# Webpack + Bootstrap 4 Setup (v1.2.0) #
 
 Starter pack for ease of mind
 
 ## Current Bootstrap version ##
 
-*4.0.0-beta*
+*4.0.0-beta.2*
 
 ## Build requirements ##
 
@@ -17,7 +17,9 @@ Starter pack for ease of mind
 installs node modules
 
 `yarn dev`
-starts and opens reload server for development (localhost:2222)
+starts and opens HMR server for development (localhost:2222)
 
 `yarn build`
 runs build tasks for staging/production
+
+(For production, remove the local jQuery+popper inside `index.html` and uncomment the CDN ones)
