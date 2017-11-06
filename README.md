@@ -1,4 +1,4 @@
-# Webpack + Bootstrap 4 Setup (v1.2.0) #
+# Webpack + Bootstrap 4 Setup (v1.3.0) #
 
 Starter pack for ease of mind
 
@@ -9,17 +9,16 @@ Starter pack for ease of mind
 ## Build requirements ##
 
 - [Node.js](https://nodejs.org/en/download/)
-- [Yarn](https://yarnpkg.com/en/docs/install/)
 
 ## How to use ##
 
-`yarn`
-installs node modules
+`npm install`
+installs dependencies
 
-`yarn dev`
+`npm start`
 starts and opens HMR server for development (localhost:2222)
 
-`yarn build`
+`npm run build`
 runs build tasks for staging/production
 
 (For production, remove the local jQuery+popper inside `index.html` and uncomment the CDN ones)

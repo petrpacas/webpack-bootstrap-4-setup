@@ -1,11 +1,11 @@
 // Variables
 
-var isBuild = process.env.NODE_ENV === 'production';
+var isBuild = process.env.NODE_ENV === 'production'
 
-var webpack = require('webpack');
-var path = require('path');
-var CleanWebpackPlugin = require('clean-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var webpack = require('webpack')
+var path = require('path')
+var CleanWebpackPlugin = require('clean-webpack-plugin')
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 var providePluginList = {
   $: 'jquery',
@@ -23,7 +23,7 @@ var providePluginList = {
   Tab: 'exports-loader?Tab!bootstrap/js/src/tab',
   Tooltip: 'exports-loader?Tooltip!bootstrap/js/src/tooltip',
   Util: 'exports-loader?Util!bootstrap/js/src/util'
-};
+}
 
 
 // Main config
@@ -104,4 +104,4 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin()
   ]
-};
+}
