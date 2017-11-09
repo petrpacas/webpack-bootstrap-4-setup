@@ -1,7 +1,10 @@
-/* Imports */
+/* HTML/JS/CSS Imports */
 
-import 'font-awesome/scss/font-awesome.scss';
-import './main.scss';
-import './bootstrap/scripts';
+require('./index.html')
+
+require('./bootstrap/scripts')
+
+require('font-awesome/scss/font-awesome.scss')
+require('./main.scss')
 
 /* Custom scripts */

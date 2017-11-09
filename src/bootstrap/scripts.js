@@ -1,13 +1,13 @@
 /* Bootstrap script imports */
 
-import 'bootstrap/js/src/util.js';
-import 'bootstrap/js/src/alert.js';
-import 'bootstrap/js/src/button.js';
-import 'bootstrap/js/src/carousel.js';
-import 'bootstrap/js/src/collapse.js';
-import 'bootstrap/js/src/dropdown.js';
-import 'bootstrap/js/src/modal.js';
-import 'bootstrap/js/src/scrollspy.js';
-import 'bootstrap/js/src/tab.js';
-import 'bootstrap/js/src/tooltip.js';
-import 'bootstrap/js/src/popover.js';
+require('bootstrap/js/src/util.js')
+require('bootstrap/js/src/alert.js')
+require('bootstrap/js/src/button.js')
+require('bootstrap/js/src/carousel.js')
+require('bootstrap/js/src/collapse.js')
+require('bootstrap/js/src/dropdown.js')
+require('bootstrap/js/src/modal.js')
+require('bootstrap/js/src/scrollspy.js')
+require('bootstrap/js/src/tab.js')
+require('bootstrap/js/src/tooltip.js')
+require('bootstrap/js/src/popover.js')

@@ -1,4 +1,4 @@
-# Webpack + Bootstrap 4 Setup (v1.3.0) #
+# Webpack + Bootstrap 4 Setup (v1.4.0) #
 
 Starter pack for ease of mind
 
@@ -19,6 +19,4 @@ installs dependencies
 starts and opens HMR server for development (localhost:2222)
 
 `npm run build`
-runs build tasks for staging/production
-
-(For production, remove the local jQuery+popper inside `index.html` and uncomment the CDN ones)
+runs build tasks for staging/production (emmits files to `/public/` folder)
