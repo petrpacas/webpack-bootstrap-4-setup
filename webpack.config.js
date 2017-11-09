@@ -74,10 +74,12 @@ module.exports = {
       test: /\.js$/,
       exclude: /.*node_modules\/((?!bootstrap\/js\/src).)*$/,
       use: isBuild ? [
-        'babel-loader?presets=env'
+        'babel-loader?presets=env',
+        'eslint-loader'
       ] : [
         'babel-loader?presets=env',
-        'webpack-module-hot-accept'
+        'webpack-module-hot-accept',
+        'eslint-loader'
       ]
     }, {
       // HTML
@@ -96,6 +98,7 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, 'public'),
     hot: true,
+    overlay: true,
     port: 2222
   },
   devtool: isBuild ? 'source-map' : 'eval',
