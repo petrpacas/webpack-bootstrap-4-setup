@@ -1,4 +1,4 @@
-# Webpack + Bootstrap 4 Setup (v1.4.1) #
+# Webpack + Bootstrap 4 Setup (v1.4.2) #
 
 Starter pack for ease of mind
 
