@@ -74,10 +74,10 @@ module.exports = {
       test: /\.js$/,
       exclude: /.*node_modules\/((?!bootstrap\/js\/src).)*$/,
       use: isBuild ? [
-        'babel-loader?presets=env',
+        'babel-loader',
         'eslint-loader'
       ] : [
-        'babel-loader?presets=env',
+        'babel-loader',
         'webpack-module-hot-accept',
         'eslint-loader'
       ]

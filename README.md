@@ -1,10 +1,10 @@
-# Webpack + Bootstrap 4 Setup (v1.4.2) #
+# Webpack + Bootstrap 4 Setup (v1.5.0) #
 
 Starter pack for ease of mind
 
 ## Current Bootstrap version ##
 
-*4.0.0-beta.2*
+*4.0.0-beta.3*
 
 ## Build requirements ##
 
