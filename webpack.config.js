@@ -85,7 +85,7 @@ module.exports = {
       // HTML
       test: /\.html$/,
       use: [
-        'file-loader?name=[name].[ext]',
+        'file-loader?useRelativePath&name=[name].[ext]',
         'extract-loader',
         'html-loader'
       ]
