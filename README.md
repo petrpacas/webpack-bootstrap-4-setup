@@ -1,6 +1,6 @@
-# Webpack + Bootstrap 4 Setup (v1.6.2) #
+# DEPRECATED: Webpack + Bootstrap 4 Setup (v1.6.2) #
 
-Starter pack for ease of mind
+This was a demonstration on how to combine Bootstrap w/ Webpack 
 
 ## Current Bootstrap version ##
 
